@@ -1,0 +1,261 @@
+/*
+*
+*  Flashsafe client default theme
+*  @author Alexander Krysin
+*
+*/
+
+QMainWindow#window {
+	margin: 10px;
+	background-color: #2E3335;
+}
+
+QWidget#centralwidget {
+	background-color: #2E3335;
+}
+
+QFrame#leftFrame {
+	background-color: #252B2D;
+}
+
+QLabel#logo {
+	color: #EEEEEE;
+	margin-top: -12px;
+	font-size: 16px;
+}
+
+QLabel#settingsButton {
+	margin-top: -12px;
+}
+
+QLabel {
+	color: #EEEEEE;
+	font-size: 11px;
+}
+
+QTreeWidget#tree {
+	border: none;
+	background: #252B2D;
+	font-size: 12px;
+	font-family: Tahoma;
+	color: #EEEEEE;
+}
+
+QCommandLinkButton#addFolderButton,
+QCommandLinkButton#trashButton {
+	color: #EEEEEE;
+}
+
+QCommandLinkButton#addFolderButton:hover,
+QCommandLinkButton#trashButton:hover {
+		background: #252B2D;
+		border: none;
+}
+
+QPushButton#closeButton,
+QPushButton#minimizeButton,
+QPushButton#maximizeButton,
+QPushButton#backwardButton,
+QPushButton#forwardButton,
+QPushButton#tableButton,
+QPushButton#gridButton,
+QPushButton#filterButton,
+QPushButton#settingsButton {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+QPushButton#settingsButton {
+	margin-top: -10px;
+}
+
+QLineEdit#searchField {
+	background-color: transparent;
+	border-style: none none solid none;
+	border-width: 0 0 1px 0;
+	border-color: transparent transparent #3F3F3F transparent;
+	color: #777777;
+}
+
+QLabel#searchIcon {
+	border-style: none none solid none;
+	border-width: 0 0 1px 0;
+	border-color: transparent transparent #3F3F3F transparent;
+	padding: 2px;
+}
+
+QProgressBar#contentProgress::chunk {
+	background: qlineargradient(x1:0, y1:0.5, x2:1, y2:0.5,
+			stop: 0.0 rgb(91,212,248),
+			stop: 0.5 rgb(41,168,198),
+			stop: 1.0 rgb(107, 227, 238));
+}
+
+QTableWidget#table {
+	background: #2E3335;
+	border: none;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #EEEEEE;
+}
+
+QTableWidget {
+	selection-background-color: #2E3335;
+}
+
+QTableWidget#table QHeaderView {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #EEEEEE;
+}
+
+QTableWidget#table QHeaderView::section {
+	background: #252B2D;
+}
+
+QScrollBar {
+    background: #252B2D;
+    width: 14px;
+    margin: 2px;
+	border: 1px solid #2E3335;
+	border-radius: 5px;
+}
+
+QScrollBar::handle {
+    background: #252B2D;
+}
+
+QScrollBar::add-line {
+    height: 0;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line {
+    height: 0;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page {
+    background: #2E3335;
+}
+
+QScrollBar::sub-page {
+    background: #2E3335;
+}
+
+QListWidget {
+	background: #2E3335;
+	border: none;
+}
+
+QListWidget::item {
+	background: #2E3335;
+	border-bottom: 1px solid #777777;
+	padding: 2px;
+}
+
+QListWidget QLabel {
+	max-height: 32px;
+	min-height: 16px;
+	color: #EEEEEE;
+	margin: 3px 0 3px 5px;
+	padding: 0;
+}
+
+QLabel#loadIcon {
+	padding: 0;
+	margin: 5px 0 0 5px;
+	width: 24px;
+}
+
+QLabel#loadName {
+	padding: 0;
+	margin-left: 0;
+}
+
+QLabel#loadInfo {
+	padding: 0;
+	margin-left: 0;
+	margin-top: -2px;
+}
+
+QProgressBar#loadProgress {
+	max-height: 8px;
+	margin: 0 5px 2px 5px;
+}
+
+/* CREATE FOLDER WINDOW STYLES */
+
+QWidget#createPathWidget {
+	background: #2E3335;
+}
+
+QLabel#creatFolderTitle {
+	color: #EEEEEE;
+	font-family: Tahoma;
+	font-size: 14px;
+	margin: -15px 0 -15px 0;
+	padding: 0;
+}
+
+QLineEdit#pathNameEdit {
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+QPushButton#acceptPathNameButton {
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	background: #252B2D;
+	color: #EEEEEE;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+/* END OF CREATE FOLDER WINDOW STYLES */
+
+/* SETTINGS WINDOW STYLES */
+
+QWidget#settingsWidget {
+	background: #252B2D;
+}
+
+QLabel#mainSettinsLabel {
+	min-width: 100px;
+	max-width: 100px;
+	min-height: 20px;
+	max-height: 20px;
+	background: #252B2D;
+	margin: 5px 0 0 5px;
+	padding: 0;
+	border-bottom: 1px solid #444444;
+	font-size: 12px;
+}
+
+QLabel#aboutSettinsLabel {
+	min-width: 100px;
+	max-width: 100px;
+	min-height: 20px;
+	max-height: 20px;
+	background: #2E3335;
+	margin: 0 0 250px 5px;
+	padding: 0;
+	border-bottom: 1px solid #444444;
+	font-size: 12px;
+}
+
+QLabel#aboutLabel {
+	margin: 0;
+	padding: 130px 0 0 -5px;
+	background: #2E3335;
+	min-width: 300px;
+	font-size: 14px;
+}
+
+/* END OF SETTINGS WINDOW STYLES */

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="trace">
+	<Properties>
+		<Property name="logPath">${env:TEMP}</Property>
+	</Properties>
+	<appenders>
+		<file name="FILE" fileName="${sys:logPath}/main.log">
+			<PatternLayout pattern="%d{ABSOLUTE} [%-5p] (%F:%L) - %m%n" />
+		</file>
+		<console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{ABSOLUTE} [%-5p] (%F:%L) - %m%n" />
+		</console>
+	</appenders>
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="STDOUT" />
+			<appender-ref ref="FILE" />
+		</root>
+	</loggers>
+</configuration>
